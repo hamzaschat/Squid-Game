@@ -1,0 +1,165 @@
+*, 
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+	--main-color: #f14584;
+}
+
+
+/* Communs 
+****************************************/
+html {
+	scroll-behavior: smooth; 
+}
+body  {
+	font-family: Arial, sans-serif;
+	font-size: 1rem;
+}
+h1, h2 {
+	font-family: 'Vidaloka', serif;
+	color: var(--main-color);
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Structure 
+****************************************/
+.row {
+	display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}
+.column {    
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 50%;
+    padding: 1rem;
+}
+.page-separator {
+    height: 100vh;
+    background-color: #111;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#page-separator-one {
+    background-image: url(../images/squid-game-4.jpeg);
+}
+#page-separator-two {
+    background-image: url(../images/squid-game-5.jpeg);
+}
+#page-separator-three {
+    background-image: url(../images/squid-game-6.jpeg);
+}
+#page-separator-four {
+    background-image: url(../images/squid-game-7.jpeg);
+}
+
+/* Header
+****************************************/
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+}
+.header-logo {
+    height: 3rem;
+}
+.header-nav {
+    flex-grow: 1;
+}
+.header-nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none inside none;
+}
+.header-nav-item {
+    flex-grow: 1;
+}
+.header-nav-link {
+    display: block;
+    color: #fff;   
+    text-decoration: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+.header-nav-link:hover {
+    color: var(--main-color);
+}
+/* Articles 
+****************************************/
+.article {
+    display: flex;
+    min-height: 100vh;
+    background-color: #fafafa;
+}
+
+.article-dark {
+    background-color: #444;
+    color: #fafafa;
+}
+
+.article-date {
+	text-align: center;
+	color: #555;
+	text-transform: uppercase;
+	font-size: .75rem;
+}
+
+
+/* Footer
+****************************************/
+.footer {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/squid-game-card.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.footer-link {
+    padding: 2rem 4rem;
+    color: var(--main-color);
+    text-decoration: none;
+    font-family: 'Vidaloka', serif;
+    font-size: 1.4rem;
+    background-color: rgba(0,0,0,.8);
+    border-radius: 1rem;
+}
+.footer-link:hover {
+    background-color: rgba(255,255,255,.8);
+}
